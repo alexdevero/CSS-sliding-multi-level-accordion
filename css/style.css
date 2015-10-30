@@ -3,16 +3,16 @@ body {
   font: 100% "Open sans", "Trebuchet MS", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 /**
  * Hidden fallback
  */
 [hidden] {
   display: none;
   visibility: hidden;
-}
-
-a {
-  text-decoration: none;
 }
 
 /**
@@ -52,54 +52,54 @@ header {
 /**
  * Styling first level lists items
  */
-.sub-group-list a,
-.sub-group-list label {
+.group-list a,
+.group-list label {
   padding-left: 2rem;
   background: #252525;
   box-shadow: inset 0 -1px #373737;
 }
-.sub-group-list a:focus, .sub-group-list a:hover,
-.sub-group-list label:focus,
-.sub-group-list label:hover {
+.group-list a:focus, .group-list a:hover,
+.group-list label:focus,
+.group-list label:hover {
   background: #131313;
 }
 
 /**
  * Styling second level list items
  */
-.sub-group-list__list a,
-.sub-group-list__list label {
+.sub-group-list a,
+.sub-group-list label {
   padding-left: 4rem;
   background: #353535;
   box-shadow: inset 0 -1px #474747;
 }
-.sub-group-list__list a:focus, .sub-group-list__list a:hover,
-.sub-group-list__list label:focus,
-.sub-group-list__list label:hover {
+.sub-group-list a:focus, .sub-group-list a:hover,
+.sub-group-list label:focus,
+.sub-group-list label:hover {
   background: #232323;
 }
 
 /**
  * Styling third level list items
  */
-.sub-sub-group-list__list a,
-.sub-sub-group-list__list label {
+.sub-sub-group-list a,
+.sub-sub-group-list label {
   padding-left: 6rem;
   background: #454545;
   box-shadow: inset 0 -1px #575757;
 }
-.sub-sub-group-list__list a:focus, .sub-sub-group-list__list a:hover,
-.sub-sub-group-list__list label:focus,
-.sub-sub-group-list__list label:hover {
+.sub-sub-group-list a:focus, .sub-sub-group-list a:hover,
+.sub-sub-group-list label:focus,
+.sub-sub-group-list label:hover {
   background: #333333;
 }
 
 /**
  * Hide inner most 
  */
+.group-list,
 .sub-group-list,
-.sub-group-list__list,
-.sub-sub-group-list__list {
+.sub-sub-group-list {
   height: 100%;
   max-height: 0;
   overflow: hidden;
@@ -159,4 +159,4 @@ footer {
 }
 .soc-media a:focus, .soc-media a:hover {
   color: rgba(255, 255, 255, 0.2);
-} 
+}
